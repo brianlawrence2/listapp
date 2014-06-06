@@ -9,10 +9,17 @@ type Page struct {
   Title string
 }
 
+type Staff struct {
+  FName string
+  LName string
+  Facility string
+  EMail string
+}
+
 func homeHandler(w http.ResponseWriter, r *http.Request) {
   t, _ := template.ParseFiles("templates/main.html")
-  p := &Page{Title: "test"}
-  t.Execute(w, p)
+  s := &Staff{FName: "Brian", LName: "Lawrence", Facility: "Hospital 1", EMail: "b@b.net"}
+  t.Execute(w, s)
 }
 
 func main() {
