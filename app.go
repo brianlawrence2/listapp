@@ -10,6 +10,10 @@ type Page struct {
 }
 
 type Staff struct {
+	StaffMembers []StaffMember
+}
+
+type StaffMember struct {
 	FName    string
 	LName    string
 	Facility string
@@ -18,7 +22,7 @@ type Staff struct {
 
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	t, _ := template.ParseFiles("templates/main.html")
-	s := &Staff{FName: "Brian", LName: "Lawrence", Facility: "Hospital 1", EMail: "b@b.net"}
+	s := &StaffMember{FName: "Brian", LName: "Lawrence", Facility: "Hospital 1", EMail: "b@b.net"}
 	t.Execute(w, s)
 }
 
