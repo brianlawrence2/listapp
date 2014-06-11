@@ -7,8 +7,8 @@
     <title>Compare Dashboard</title>
 
     <!-- Bootstrap -->
-    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/css/main.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -78,14 +78,23 @@
               <td>{{.EMail}}</td>
             </tr>
             {{end}}
+            <form class="form-inline" role="form">
+            <tr>
+              <td>1</td>
+              <td><input type="text" class="form-control" id="FName" placeholder="First Name"></td>
+              <td><input type="text" class="form-control" id="LName" placeholder="Last Name"></td>
+              <td><input type="text" class="form-control" id="Position" placeholder="Position"></td>
+              <td><input type="text" class="form-control" id="Facility" placeholder="Facility"></td>
+              <td><input type="text" class="form-control" id="EMail" placeholder="E-Mail"></td>
+            </tr>
+            </form>
           </tbdoy>
         </table>
       </div>
     </div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
