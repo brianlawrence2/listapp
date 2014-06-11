@@ -67,6 +67,7 @@
             </tr>
           </thead>
           <tbody>
+            {{range .StaffMembers}}
             <tr>
               <td>1</td>
               <td>{{.FName}}</td>
@@ -74,6 +75,7 @@
               <td>{{.Facility}}</td>
               <td>{{.EMail}}</td>
             </tr>
+            {{end}}
           </tbdoy>
         </table>
       </div>
