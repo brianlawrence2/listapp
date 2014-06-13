@@ -18,7 +18,7 @@ type StaffMember struct {
 	LName    string
 	Facility string
 	Position string
-	EMail    string
+	EMail    string  
 }
 
 func homeHandler(w http.ResponseWriter, r *http.Request) {
